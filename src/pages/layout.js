@@ -8,7 +8,9 @@ import {
   navLinkText,
   siteTitle,
 } from "../components/layout.module.css";
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, pageContext }) => {
+  console.log("sads", pageContext);
+
   const data = useStaticQuery(
     graphql`
       query {
